@@ -55,10 +55,3 @@ precoRestaurante pessoas semana
     | semana /= "domingo" && semana /= "sabado" && pessoas == 6 = 180.00
     | semana /= "domingo" && semana /= "sabado" && pessoas == 7 = 185.00
     | otherwise = 404
-
-bmiTell :: (RealFloat a) => a -> a -> String  
-bmiTell weight height  
-    | weight / height ^ 2 <= 18.5 = "Você esta abaixo do peso!"  
-    | weight / height ^ 2 <= 25.0 = "Supostamente você esta normal. Pfff, aposto que você é feio!"  
-    | weight / height ^ 2 <= 30.0 = "Você esta gordo! Faça uma dieta, gorducho!"  
-    | otherwise                 = "Você é uma baleia, meus parabéns!" 
